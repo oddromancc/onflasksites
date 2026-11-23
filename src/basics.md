@@ -39,7 +39,7 @@ def onhome():
     return render_template(forhome.html)
 ```
 
-That is all the Python code you need for the app to run, but we still need to create the HTML files and place it in the `templates/` folder.
+That is all the Python code you need for the app to run, but we still need to create the HTML files and place them in the `templates/` folder.
 
 HTML can feel redundant which is why we're creating two HTML files. One is going to be the base titled `base.html`, and the other, titled `forhome.html`, is going to display content specific to the `/home` page.
 
@@ -47,8 +47,58 @@ Everything from `base.html` is carried over into `forhome.html` using Jinja.
 
 Let's create `base.html`:
 ```
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
 
+        </footer>
+    </body>
 </html>
 ```
+
+So there is a series of self-explanatory tags which you will get the hang of if seeing for the first time. But right now we're paying attention to this part:
+```
+{% block content %}{% endblock %}
+```
+
+This is like a bucket that we can fill in with other html files. The name of the block can be anything.
+
+Now that we have our `base.html` created, let's write the very first line of `forhome.html`:
+```
+{% extends 'base.html' %}
+```
+
+This means we're basically rendering `base.html` when displaying `forhome.html`, but not quite because we're also adding content unique to the `/home` page by continuing the code like this:
+```
+{% block content %}
+    <h1>Welcome to the home page</h1>
+{% endblock %}
+```
+
+Overall, this is the whole content of `forhome.html`:
+```
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to the home page</h1>
+{% endblock %}
+```
+
+Launch your app by running this command:
+```
+flask --app .\main.py run
+```
+
+Navigate to the `/home` page and see the "Welcome to the home page".
+
+Congrats! You've managed to create a simple Flask app that you can now build upon.
