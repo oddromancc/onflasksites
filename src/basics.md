@@ -11,7 +11,7 @@ from flask import Flask, render_template
 ```
 You just imported flask itself to initialize it later, and you also imported `render_template` which when returned will display an HTML file.
 
-Here is how you initialize the app.
+Here is how you initialize the app. Don't worry about the value of the secret key for now, but later when you deploy you should change to something more secure.
 ```
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'key'
@@ -24,4 +24,5 @@ Here is how you create a page with this URL, `https://yourdomain.com/home`:
 def onhome():
     return render_template(forhome.html)
 ```
-To create the `forhome.html` file, make sure there is a `templates` folder
+
+Let's create
