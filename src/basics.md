@@ -1,5 +1,7 @@
 # Basics
 
+Create two folders, `templates` and `static`. Create a file with a `.py` extension.
+
 Here is what you write to initialize your app:
 ```
 app = Flask(__name__)
