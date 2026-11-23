@@ -39,5 +39,16 @@ def onhome():
     return render_template(forhome.html)
 ```
 
-That is all the code you need for the app to run, but we still need to create the HTML file and place it in the `templates/` folder.
+That is all the Python code you need for the app to run, but we still need to create the HTML files and place it in the `templates/` folder.
 
+HTML can feel redundant which is why we're creating two HTML files. One is going to be the base titled `base.html`, and the other, titled `forhome.html`, is going to display content specific to the `/home` page.
+
+Everything from `base.html` is carried over into `forhome.html` using Jinja.
+
+Let's create `base.html`:
+```
+<!doctype html>
+<html>
+
+</html>
+```
