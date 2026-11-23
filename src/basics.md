@@ -1,11 +1,17 @@
 # Basics
 
 Create the following:
-- `static/`
-- `templates/`
-- `main.py`
+- `static/` - a folder to store your `.css` file
+- `templates/` - a folder to store your `.html` files
+- `main.py` - the file where you will write your program
 
-Here is what you write to initialize your app:
+In `main.py`, these are the first lines of code:
+```
+from flask import Flask, render_template
+```
+You just imported flask itself to initialize it later, and you also imported `render_template` which when returned will display an HTML file.
+
+Here is how you initialize the app.
 ```
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'key'
