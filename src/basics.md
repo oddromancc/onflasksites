@@ -1,6 +1,9 @@
 # Basics
 
-Create two folders, `templates` and `static`. Create a file with a `.py` extension.
+Create the following:
+- `static/`
+- `templates/`
+- `main.py`
 
 Here is what you write to initialize your app:
 ```
