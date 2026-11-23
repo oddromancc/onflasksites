@@ -27,6 +27,8 @@ def onhome():
     return render_template(forhome.html)
 ```
 
+Basically, it's page URL excluding domain name, then function that does whatever and in this case finally returns a template (displays an .html file).
+
 So far this is what we have in the `main.py` file:
 ```
 from flask import Flask, render_template
@@ -36,7 +38,7 @@ app.config['SECRET_KEY'] = 'key'
 
 @app.route('/home')
 def onhome():
-    return render_template(forhome.html)
+    return render_template('forhome.html')
 ```
 
 That is all the Python code you need for the app to run, but we still need to create the HTML files and place them in the `templates/` folder.
@@ -71,7 +73,7 @@ So there is a series of self-explanatory tags which you will get the hang of if 
 {% block content %}{% endblock %}
 ```
 
-This is like a bucket that we can fill in with other html files. The name of the block can be anything.
+This is like a bucket that we can fill using other html files. The name of the block can be anything.
 
 Now that we have our `base.html` created, let's write the very first line of `forhome.html`:
 ```
@@ -85,7 +87,7 @@ This means we're basically rendering `base.html` when displaying `forhome.html`,
 {% endblock %}
 ```
 
-Overall, this is the whole content of `forhome.html`:
+Overall, this is the whole of `forhome.html`:
 ```
 {% extends 'base.html' %}
 
