@@ -48,3 +48,17 @@ def onsomepage():
     
     return render_template('forsomepage.html')
 ```
+
+You could also have two forms on one page. For example, you're making a ranked game, and passing some kind of
+If you have two forms on one page, the HTML might look like this:
+```
+<form method="post">
+    <input type="hidden" name="myRank" value="{{ userRank }}">
+    <input type="submit" value="Find opponents">
+</form>
+
+<form method="post">
+    <input type="hidden" name="opponentId" value="{{ oppId }}" required>
+    <input type="submit" value="Pick opponent">
+</form>
+```
