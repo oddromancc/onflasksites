@@ -2,6 +2,7 @@
 
 - [Intro](./intro.md)
 - [Basics](./basics.md)
+- [CSS](./css.md)
 - [Templating](./templating.md)
 - [Pagination](./pagination.md)
 - [Forms](./forms.md)
