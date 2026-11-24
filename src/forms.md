@@ -49,7 +49,7 @@ def onsomepage():
     return render_template('forsomepage.html')
 ```
 
-You could also have two forms on one page. For example, you're making a ranked game where a player looks for multiple potential opponents based on their rank. As a reminder, variables, such as `userRank`, that you pass to `render_template()` can be accessed in the html file by putting them in brackets like this: `{{ userRank }}`.
+You could also have two forms on one page. For example, you're making a ranked game where a player looks for multiple potential opponents based on rank. As a reminder, variables, such as `userRank`, that you pass to `render_template()` can be accessed in the html file by putting them in brackets like this: `{{ userRank }}`.
 
 The HTML might look like this:
 ```
@@ -59,7 +59,22 @@ The HTML might look like this:
 </form>
 
 <form method="post">
-    <input type="hidden" name="opponentId" value="{{ oppId }}" required>
+    <input type="hidden" name="opponentId" value="{{ opponent[0] }}" required>
     <input type="submit" value="Pick opponent">
 </form>
 ```
+
+Python code:
+```
+@app.route('/somepage', methods=('GET', 'POST'))
+def onsomepage():
+    if request.method == 'POST':
+        if 'myRank' in request.form:
+            rank = request.form['myRank']
+        
+        if 'opponentId' in request.form:
+            opponentId = request.form['opponentId']
+        
+    return render_template('forsomepage.html')
+```
+
