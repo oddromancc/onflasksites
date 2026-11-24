@@ -12,3 +12,15 @@ Make sure to create a `requirements.txt` file which is essentially a list of all
 pip freeze > requirements.txt
 ```
 
+### Railway
+
+Open Railway's website, 
+
+Enter this as the "Custom Start Command" in Settings under Deploy:
+```
+gunicorn -w 4 'main:app'
+```
+
+Finally, press the deploy button. Under Networking press "Generate Domain". Visit the generated domain.
+
+Congrats! You deployed your Flask website on the internet. Keep making commits to your Github repo, and your website will update automatically.
