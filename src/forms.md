@@ -1,6 +1,6 @@
 # Forms
 
-This page shows basic form handling.
+This page shows basic form handling. Not using WTForms, at least not yet.
 
 Here is how you create your form in HTML:
 ```
@@ -37,7 +37,7 @@ Here is a form of checkboxes, which has only one `name` value, but multiple actu
 </form>
 ```
 
-Here is another code excerpt for a page, this time we save the checked boxes in a Python list:
+Here is how you then save the checked boxes in a Python list:
 ```
 @app.route('/somepage', methods=('GET', 'POST'))
 def onsomepage():
@@ -77,4 +77,3 @@ def onsomepage():
         
     return render_template('forsomepage.html')
 ```
-
