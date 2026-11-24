@@ -2,6 +2,8 @@
 
 This page shows basic form handling. Not using WTForms, at least not yet.
 
+### Regular form
+
 Here is how you create your form in HTML:
 ```
 <form method="post">
@@ -26,6 +28,8 @@ def onsomepage():
 
 You write `methods=('GET', 'POST')` to allow GET and POST requests, which means the form submit button is functional.
 
+### Checkbox/Filter form
+
 Here is a form of checkboxes, which has only one `name` value, but multiple actual "inputs":
 ```
 <form method="post">
@@ -48,6 +52,8 @@ def onsomepage():
     
     return render_template('forsomepage.html')
 ```
+
+### Two forms
 
 You could also have two forms on one page. 
 

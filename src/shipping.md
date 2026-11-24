@@ -14,7 +14,7 @@ pip freeze > requirements.txt
 
 ### Railway
 
-Open Railway's website, 
+Open Railway's website.
 
 Enter this as the "Custom Start Command" in Settings under Deploy:
 ```
