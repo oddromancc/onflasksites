@@ -55,7 +55,7 @@ The HTML might look like this:
 ```
 <form method="post">
     <input type="text" name="fullName" required>
-    <input type="submit" value="Send form #2">
+    <input type="submit" value="Send form #1">
 </form>
 
 <form method="post">
