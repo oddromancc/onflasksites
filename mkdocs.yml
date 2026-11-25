@@ -1,4 +1,6 @@
 site_name: On Flask
+site_author: OddRomanCC (github.com/oddromancc)
+site_description: A tutorial on how to make websites with Flask
 theme: readthedocs
 repo_url: https://github.com/oddromancc/onflasksites
 nav:
