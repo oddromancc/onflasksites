@@ -2,7 +2,7 @@ site_name: On Flask
 theme: readthedocs
 repo_url: https://github.com/oddromancc/onflasksites
 nav:
-  - Intro: intro.md
+  - Intro: index.md
   - Basics: basics.md
   - CSS: css.md
   - Templating: templating.md
