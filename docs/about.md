@@ -1,3 +1,3 @@
 # About
 
-Tutorial made by [OddRomanCC](https://github.com/oddromancc)
+Tutorial made by [OddRomanCC](https://github.com/oddromancc).
