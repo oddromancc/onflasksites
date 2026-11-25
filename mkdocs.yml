@@ -1,5 +1,5 @@
 site_name: A Flask Tutorial
-site_author: OddRomanCC (github.com/oddromancc)
+site_author: OddRomanCC (https://github.com/oddromancc)
 site_description: A tutorial on how to make websites with Flask
 theme: mkdocs
 nav:
