@@ -16,6 +16,12 @@ Install Tailwind and DaisyUI by running this in the terminal:
 npm install tailwindcss@latest @tailwindcss/cli@latest daisyui@latest
 ```
 
+Create `app.css` in root folder and copy this inside:
+```
+@import "tailwindcss";
+@plugin "daisyui";
+```
+
 In the `package.json` file, under "scripts" create a new script by adding this entry:
 ```
 "build:css": "npx @tailwindcss/cli -i app.css -o static/output.css"

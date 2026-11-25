@@ -1,7 +1,7 @@
-site_name: On Flask
+site_name: A Flask Tutorial
 site_author: OddRomanCC (github.com/oddromancc)
 site_description: A tutorial on how to make websites with Flask
-theme: readthedocs
+theme: mkdocs
 repo_url: https://github.com/oddromancc/onflasksites
 nav:
   - Intro: index.md
