@@ -4,10 +4,12 @@ site_description: A tutorial on how to make websites with Flask
 theme: mkdocs
 nav:
   - Intro: index.md
-  - Basics: basics.md
-  - CSS: css.md
-  - Templating: templating.md
-  - Forms: forms.md
-  - Pagination: pagination.md
-  - Login: login.md
-  - Shipping: shipping.md
+  - Tutorial:
+    - Basics: basics.md
+    - CSS: css.md
+    - Templating: templating.md
+    - Forms: forms.md
+    - Pagination: pagination.md
+    - Login: login.md
+    - Shipping: shipping.md
+  - About: about.md
