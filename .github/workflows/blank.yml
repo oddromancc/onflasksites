@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy an MkDocs site
 
 # Controls when the workflow will run
 on:
@@ -37,11 +37,9 @@ jobs:
         run: |
           pip install -r requirements.txt
           mkdocs build
-          ls
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: './site'
 
   deploy:
