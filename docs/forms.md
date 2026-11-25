@@ -2,7 +2,12 @@
 
 This page shows basic form handling. Not using WTForms, at least not yet.
 
-### Regular form
+Before we start, make sure to import `request` in `main.py`:
+```
+from flask import Flask, render_template, request
+```
+
+## Regular form
 
 Here is how you create your form in HTML:
 ```
@@ -28,7 +33,7 @@ def onsomepage():
 
 You write `methods=('GET', 'POST')` to allow GET and POST requests, which means the form submit button is functional.
 
-### Checkbox/Filter form
+## Checkbox/Filter form
 
 Here is a form of checkboxes, which has only one `name` value, but multiple actual "inputs":
 ```
@@ -53,7 +58,7 @@ def onsomepage():
     return render_template('forsomepage.html')
 ```
 
-### Two forms
+## Two forms
 
 You could also have two forms on one page. 
 

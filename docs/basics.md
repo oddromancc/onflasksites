@@ -5,7 +5,7 @@ Create the following:
 - `templates/` - a folder to store your `.html` files
 - `main.py` - the file where you will write your program
 
-### Python
+## Python
 
 In `main.py`, these are the first lines of code:
 ```
@@ -43,7 +43,7 @@ def onhome():
     return render_template('forhome.html')
 ```
 
-### HTML
+## HTML
 
 That is all the Python code you need for the app to run, but we still need to create the HTML files and place them in the `templates/` folder.
 

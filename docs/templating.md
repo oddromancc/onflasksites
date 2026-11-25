@@ -2,7 +2,7 @@
 
 Here is some stuff you can do with the Jinja templating engine besides blocks such as `{% block title %}{% endblock %}` and extending other HTML files.
 
-### For loop
+## For loop
 
 You can iterate through a list. First, in `main.py` you pass the list to the template like this:
 ```
@@ -16,7 +16,7 @@ Then you write this in your html:
 {% endfor %}
 ```
 
-### If statement
+## If statement
 
 You can also have if-else statements. I'm going to show one way to implement a message that indicates if the user is online. Let's imagine we queried our database and it showed that the user is online right now. So we set our variable `isOnline` to `'good'`. If the user wasn't online, `isOnline` would be `None`. So we pass `isOnline` to `render_template()`.
 

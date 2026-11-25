@@ -12,7 +12,7 @@ Make sure to create a `requirements.txt` file which is essentially a list of all
 pip freeze > requirements.txt
 ```
 
-### Railway
+## Railway
 
 Open Railway's website.
 
