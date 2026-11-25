@@ -31,7 +31,7 @@ Make sure `url_for` is imported from `flask` and include this in the head sectio
 <link href="{{ url_for('static', filename='output.css') }}" rel="stylesheet">
 ```
 
-Run your app.
+Run your app. When you make changes to your templates, you will probably going to have to run the script again, because the `output.css` file only has the CSS for the elements that you're actually using. So if something looks off when testing, you may benefit from building the .css again.
 
 ### Bootstrap
 
